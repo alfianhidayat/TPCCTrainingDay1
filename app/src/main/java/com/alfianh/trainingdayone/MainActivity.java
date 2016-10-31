@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 increment();
                 break;
             case R.id.btn_minus:
-                if (count < 0) {
+                if (count < 1) {
                     return;
                 }
                 decrement();
