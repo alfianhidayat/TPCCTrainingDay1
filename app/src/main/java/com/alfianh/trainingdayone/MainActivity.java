@@ -26,8 +26,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         resultCount.setText(String.valueOf(count));
         Button plus = (Button) findViewById(R.id.btn_plus);
         Button minus = (Button) findViewById(R.id.btn_minus);
+        Button clear = (Button) findViewById(R.id.btn_clear);
         plus.setOnClickListener(this);
         minus.setOnClickListener(this);
+        clear.setOnClickListener(this);
         Log.v(MainActivity.class.getSimpleName(), "Angka sekarang nilainya : " + resultCount.getText().toString());
         Toast.makeText(this, "Angkanya sekarang nilainya " + resultCount.getText().toString(), Toast.LENGTH_LONG).show();
     }
@@ -61,6 +63,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     return;
                 }
                 decrement();
+                break;
+            case R.id.btn_clear:
+                count = 0;
+                resultCount.setText("0");
                 break;
         }
     }

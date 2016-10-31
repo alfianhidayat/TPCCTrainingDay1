@@ -34,6 +34,15 @@
             android:textColor="#fff" />
 
         <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:text="Claer"
+            android:layout_centerInParent="true"
+            android:textColor="#fff" />
+
+        <Button
             android:id="@+id/btn_plus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
